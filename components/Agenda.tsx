@@ -23,7 +23,7 @@ const Agenda: React.FC = () => {
   ];
 
   return (
-    <section id="schedule" className="py-20 md:py-32 px-4 md:px-8 lg:px-16">
+    <section id="register" className="py-20 md:py-32 px-4 md:px-8 lg:px-16">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-12 md:mb-20 gap-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter">AGENDA</h2>
