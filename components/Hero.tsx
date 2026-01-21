@@ -12,7 +12,6 @@ const Hero: React.FC = () => {
             {/* Top Meta Bar */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16 gap-4">
               <span className="text-white text-[10px] md:text-xs font-black uppercase tracking-[0.2em] opacity-60">FEBRUARY 12, 2025</span>
-              <span className="text-white text-[10px] md:text-xs font-black uppercase tracking-[0.2em] opacity-60">Richmond College</span>
             </div>
 
             <div className="grid lg:grid-cols-2 items-center gap-12 relative">
@@ -34,12 +33,21 @@ const Hero: React.FC = () => {
                 </Button>
               </div>
               
-              <div className="hidden lg:flex justify-end relative">
-                <img src="/wrench.webp" alt="" width="500" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#2563EB]/10 blur-[150px] rounded-full" />
-              </div>
+              
             </div>
+            
           </div>
+          <div className="hidden md:block relative h-full">
+          <img
+            src="/wrench.webp"
+            alt=""
+            className="absolute bottom-0 right-0 w-[500px] max-w-none"
+          />
+
+          {/* Glow */}
+          <div className="absolute bottom-24 right-24 w-64 h-64 bg-[#2563EB]/10 blur-[150px] rounded-full pointer-events-none" />
+        </div>
+
         </div>
       </FadeInSection>
     </section>
