@@ -159,10 +159,7 @@ const Map: React.FC = () => {
                 </g>
 
                 {/* Bottom Sector */}
-                <g transform="translate(620, 520)">
-                  <rect width="30" height="60" fill="white" opacity="0.1" rx="2" />
-                  <text x="-120" y="40" textAnchor="end">EM Karunaratne Building</text>
-                </g>
+                
                 <g transform="translate(700, 680)">
                   <rect width="90" height="25" fill="white" opacity="0.1" rx="2" />
                   <text y="40">Grade 6 Class Rooms</text>
