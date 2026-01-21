@@ -3,7 +3,7 @@ import React from 'react';
 
 const Sponsors: React.FC = () => {
   const sponsors = [
-    'Create', 'Explore', 'Expand', 'Conquer'
+    ' ','Create', 'Explore', 'Expand', 'Conquer', ' '
   ];
 
   return (
