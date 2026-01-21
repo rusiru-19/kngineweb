@@ -1,78 +1,172 @@
 import React from 'react';
+import { Mail, MapPin, Users, Phone } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const eventIncharges = [
+    {
+      event: "president",
+      name: "Dulen Gamage",
+      phone: "+94 77 351 0195",
+    },
+    {
+      event: "Competition",
+      name: "Thilina Methsahan",
+      phone: "+94 77 278 9984",
+    },
+    {
+      event: "Cyber Combat",
+      name: "Randula Gunathilaka",
+      phone: "+94 70 602 6941",
+    },
+    {
+      event: "cyber Combat",
+      name: "Mahin",
+      phone: "+94 77 311 0252",
+    },
+    {
+      event: "Registration",
+      name: "Dinel",
+      phone: "+94 77 007 5073",
+    },
+    {
+      event: "Logistic",
+      name: "Pesara Damketh",
+      phone: "+94 71 156 8618",
+    },
+  ];
+
   return (
-    <section className="py-20 md:py-32 px-4 md:px-8 lg:px-16">
-      <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24">
-        <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter leading-tight mb-8 md:mb-10">
-            We're Here To<br />Connect And<br />Assist You
+    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
+      <div className="max-w-[1200px] mx-auto">
+        
+        {/* Header Section */}
+        <div className="mb-16 md:mb-24">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-6">
+            Get In<br />Touch
           </h2>
-          <p className="text-[#9CA3AF] text-base md:text-lg mb-12 md:mb-16 leading-relaxed">
-            Have questions about KNGINE? Need help with registration or logistics? Our team is available to assist you.
+          <p className="text-[#9CA3AF] text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed">
+            Have questions about KNGINE? Reach out to our event coordinators or contact us through any of the channels below.
           </p>
+        </div>
+
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-3 gap-8 md:gap-12 mb-16 md:mb-20">
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16">
-            <div>
-              <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Contact us</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">https://chat.whatsapp.com/C84IEY7Sd2dLZlKtlNtDpW</p>
+          {/* Contact Info Cards */}
+          <div className="lg:col-span-1 space-y-6">
+            {/* WhatsApp */}
+            <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-all group">
+              <div className="w-12 h-12 bg-[#25D366]/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#25D366]/20 transition-colors">
+                <Users className="w-6 h-6 text-[#25D366]" />
+              </div>
+              <h4 className="text-[#6B7280] text-xs font-bold uppercase tracking-widest mb-3">WhatsApp Group</h4>
+              <a 
+                href="https://chat.whatsapp.com/C84IEY7Sd2dLZlKtlNtDpW" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-bold text-sm md:text-base hover:text-[#25D366] transition-colors break-all"
+              >
+                Join Community
+              </a>
             </div>
-            <div>
-              <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Location</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">Richmond College<br />Galle, Sri Lanka</p>
+
+            {/* Email */}
+            <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-all group">
+              <div className="w-12 h-12 bg-[#2563EB]/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-[#2563EB]/20 transition-colors">
+                <Mail className="w-6 h-6 text-[#2563EB]" />
+              </div>
+              <h4 className="text-[#6B7280] text-xs font-bold uppercase tracking-widest mb-3">Email Support</h4>
+              <a 
+                href="mailto:kngine.rits@gmail.com"
+                className="text-white font-bold text-sm md:text-base hover:text-[#2563EB] transition-colors break-all"
+              >
+                kngine.rits@gmail.com
+              </a>
             </div>
-            <div>
-              <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Email support</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">kngine.rits@gmail.com</p>
+
+            {/* Location */}
+            <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-all group">
+              <div className="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
+                <MapPin className="w-6 h-6 text-purple-500" />
+              </div>
+              <h4 className="text-[#6B7280] text-xs font-bold uppercase tracking-widest mb-3">Location</h4>
+              <p className="text-white font-bold text-sm md:text-base leading-relaxed">
+                Richmond College<br />Galle, Sri Lanka
+              </p>
             </div>
-            <div>
-              <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Social media</h4>
-              <div className="flex gap-6 mt-2">
-                {['FB', 'IG'].map(s => (
-                  <span key={s} className="text-white font-bold text-xs cursor-pointer hover:text-[#2563EB] transition-colors tracking-widest">{s}</span>
+          </div>
+
+          {/* Event Incharges */}
+          <div className="lg:col-span-2">
+            <div className="bg-[#121212] p-6 sm:p-8 md:p-10 lg:p-12 rounded-3xl border border-white/5">
+              <div className="flex items-center gap-3 mb-8 md:mb-10">
+                <div className="w-12 h-12 bg-[#2563EB]/10 rounded-2xl flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-[#2563EB]" />
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-tight">Event Coordinators</h3>
+                  <p className="text-[#6B7280] text-xs md:text-sm uppercase tracking-widest">Contact Our Team</p>
+                </div>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+                {eventIncharges.map((incharge, idx) => (
+                  <div 
+                    key={idx}
+                    className="bg-[#1A1A1A] p-5 md:p-6 rounded-2xl border border-white/5 hover:border-[#2563EB]/30 hover:bg-[#1A1A1A]/80 transition-all group"
+                  >
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex-1">
+                        <h4 className="text-[#2563EB] text-xs font-black uppercase tracking-widest mb-2 group-hover:text-[#3b82f6] transition-colors">
+                          {incharge.event}
+                        </h4>
+                        <p className="text-white font-bold text-base md:text-lg tracking-tight mb-1">
+                          {incharge.name}
+                        </p>
+                      </div>
+                    </div>
+                    <a 
+                      href={`tel:${incharge.phone.replace(/\s/g, '')}`}
+                      className="text-[#9CA3AF] font-medium text-sm hover:text-[#2563EB] transition-colors flex items-center gap-2"
+                    >
+                      <Phone className="w-4 h-4" />
+                      {incharge.phone}
+                    </a>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-[#1A1A1A] p-8 md:p-12 lg:p-16 rounded-[32px] border border-white/5 shadow-2xl">
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-2 tracking-tight uppercase">Get In Touch</h3>
-          <p className="text-[#6B7280] text-xs md:text-sm mb-10 leading-relaxed uppercase tracking-widest">Inquiries about resistrations or partnerships.</p>
-          
-          <form className="space-y-6 md:space-y-8">
-            <div className="space-y-1">
-              <label className="text-[10px] uppercase font-black text-[#6B7280] tracking-widest">Full Name</label>
-              <input 
-                type="text" 
-                placeholder="Name" 
-                className="w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#2563EB] transition-colors text-base"
-              />
-            </div>
-            <div className="space-y-1">
-              <label className="text-[10px] uppercase font-black text-[#6B7280] tracking-widest">Email Address</label>
-              <input 
-                type="email" 
-                placeholder="Email" 
-                className="w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#2563EB] transition-colors text-base"
-              />
-            </div>
-            <div className="space-y-1">
-              <label className="text-[10px] uppercase font-black text-[#6B7280] tracking-widest">Message</label>
-              <textarea 
-                placeholder="How can we help?" 
-                rows={3}
-                className="w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#2563EB] transition-colors resize-none text-base"
-              />
-            </div>
-            <button className="w-full bg-[#2563EB] text-white py-5 rounded-full font-black uppercase tracking-widest hover:bg-blue-700 transition-all active:scale-95 text-sm md:text-base">
-              Send Message
-            </button>
-          </form>
+        {/* Social Media Section */}
+        <div className="bg-gradient-to-r from-[#121212] to-[#1A1A1A] p-8 md:p-12 rounded-3xl border border-white/5 text-center">
+          <h3 className="text-[#6B7280] text-xs font-bold uppercase tracking-widest mb-6">Follow Us</h3>
+          <div className="flex justify-center gap-6">
+            <a 
+              href="#" 
+              className="w-14 h-14 bg-white/5 hover:bg-[#1877F2]/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5 hover:border-[#1877F2]/30"
+            >
+              <span className="text-white font-black text-sm group-hover:text-[#1877F2] transition-colors">FB</span>
+            </a>
+            <a 
+              href="#" 
+              className="w-14 h-14 bg-white/5 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#F56040] rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5"
+            >
+              <span className="text-white font-black text-sm group-hover:text-white transition-colors">IG</span>
+            </a>
+            <a 
+              href="#" 
+              className="w-14 h-14 bg-white/5 hover:bg-[#1DA1F2]/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5 hover:border-[#1DA1F2]/30"
+            >
+              <span className="text-white font-black text-sm group-hover:text-[#1DA1F2] transition-colors">X</span>
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default Contact
