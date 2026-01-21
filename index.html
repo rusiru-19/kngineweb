@@ -1,16 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KNGINE | Richmond College ICT Day</title>
-    <meta name="description" content=    "KNGINE is the annual ICT Day organized by the Richmond College ICT Society (RITS), featuring innovative technology events, competitions, and digital excellence.">
+    <title>KNGINE ICT Day 2026 | Richmond College</title>
+    <meta name="description" content="KNGINE ICT Day 2026 at Richmond College, February 12, 2026, from 8:30 AM to 2:30 PM. Participate in Codecom, Interllect, Cybercombat, DesignerX and other technology competitions." />
+    <meta name="keywords" content="KNGINE, ICT Day, Richmond College, Codecom, Interllect, Cybercombat, DesignerX, 2026, Registration, Technology Event" />
+    <meta name="author" content="Richmond College ICT Society" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="KNGINE ICT Day 2026 | Richmond College" />
+    <meta property="og:description" content="Join KNGINE ICT Day 2026 at Richmond College on February 12, 2026, 8:30 AM to 2:30 PM. Participate in exciting competitions like Codecom, Interllect, Cybercombat, DesignerX." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kngine.richmondcollege.lk/" />
+    <meta property="og:image" content="/og.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KNGINE ICT Day 2026 | Richmond College" />
+    <meta name="twitter:description" content="KNGINE ICT Day 2026 at Richmond College, Feb 12, 8:30 AM – 2:30 PM. Register for competitions like Codecom, Interllect, Cybercombat, DesignerX." />
+    <meta name="twitter:image" content="/og.png" />
+
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="icon" href="/logo.png" type="image/x-icon">
 
     <style>
       body {
@@ -44,6 +60,41 @@
         visibility: visible;
       }
     </style>
+
+    <!-- Event Structured Data (JSON-LD for SEO rich snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "KNGINE ICT Day 2026",
+      "startDate": "2026-02-12T08:30:00+05:30",
+      "endDate": "2026-02-12T14:30:00+05:30",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Richmond College",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Galle",
+          "addressLocality": "Galle",
+          "addressRegion": "Southern Province",
+          "postalCode": "",
+          "addressCountry": "LK"
+        }
+      },
+      "image": [
+        "https://kngine.richmondcollege.lk/og.png"
+      ],
+      "description": "KNGINE ICT Day 2026 at Richmond College. Participate in Codecom, Interllect, Cybercombat, DesignerX, and other exciting competitions. Event timing: 8:30 AM – 2:30 PM.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Richmond College ICT Society",
+        "url": "https://kngine.richmondcollege.lk"
+      }
+    }
+    </script>
+
     <script type="importmap">
     {
       "imports": {
@@ -54,10 +105,11 @@
       }
     }
     </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
+
+    <link rel="stylesheet" href="/index.css">
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
