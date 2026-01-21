@@ -50,7 +50,8 @@ const Registration: React.FC = () => {
 {
       title: "KNGINE'20",
       img: '/kngine20.jpg'
-    }
+    },    
+    
 
 
     {
