@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               
               <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                 <div className="flex flex-col gap-3">
-                  <a href="#schedule" className="text-sm font-bold hover:opacity-60 transition-opacity">Agenda</a>
+                  <a href="#register" className="text-sm font-bold hover:opacity-60 transition-opacity">Agenda</a>
                   <a href="#speakers" className="text-sm font-bold hover:opacity-60 transition-opacity">Speakers</a>
                   <a href="#tickets" className="text-sm font-bold hover:opacity-60 transition-opacity">Register</a>
                   <a href="#venue" className="text-sm font-bold hover:opacity-60 transition-opacity">Venue</a>
