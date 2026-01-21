@@ -3,7 +3,7 @@ import { Logo, MenuIcon, CloseIcon } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const links = ['Home', 'Schedule', 'Speakers', 'Tickets', 'Venue', 'Sponsors'];
+  const links = ['Home', /*'Schedule',*/ 'Speakers', 'Past', 'Venue', /*'Sponsors' */];
 
   return (
     <>
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-2">
               <a href="#home" className="bg-white/5 border border-white/10 px-6 py-2 rounded-full text-white text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors">Home</a>
-              {['Schedule', 'Speakers', 'Tickets', 'Venue', 'Sponsors'].map((link) => (
+              {[/*'Schedule',*/ 'Speakers', 'Past', 'Venue', /*'Sponsors' */].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}

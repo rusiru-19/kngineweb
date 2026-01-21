@@ -9,7 +9,7 @@ const Competitions: React.FC = () => {
       name: 'Intellect',
       logo: '/comps/quiz.png', 
       desc: 'The ultimate battle of wits for the brightest minds in the region.',
-      info: ['Team of 3 members', 'General Knowledge', 'Live Stage Final'],
+      info: ['Team of 4 members', 'General IT Knowledge', 'Live Stage Final'],
       status: 'OPEN',
       featured: false
     },
@@ -27,16 +27,16 @@ const Competitions: React.FC = () => {
       name: 'Cyber Combat',
       logo: '/comps/cybercombat.png', 
       desc: 'Strategic gaming tournament testing reflexes and teamwork.',
-      info: ['Multiplayer setup', 'FPS/MOBA Focus', 'Direct Elimination'],
+      info: ['Team of 4 members', 'FPS/MOBA Focus', 'Direct Elimination'],
       status: 'OPEN',
-      featured: false
+      featured: true
     },
     { 
       id: '04',
       name: 'DeXigner',
       logo: '/comps/designerx.png', 
       desc: 'Visual storytelling and digital art competition for creative visionaries.',
-      info: ['Digital Art', 'Brand Identity', 'Portfolio review'],
+      info: ['Individual entry', 'Brand Identity', 'Visual Design'],
       status: 'OPEN',
       featured: false
     }

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Sponsors: React.FC = () => {
   const sponsors = [
-    'amazon', 'dribbble', 'HubSpot', 'Notion', 'GUMROAD'
+    ' ','Create', 'Explore', 'Expand', 'Conquer', ' '
   ];
 
   return (

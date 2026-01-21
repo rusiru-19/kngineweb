@@ -9,26 +9,26 @@ const Contact: React.FC = () => {
             We're Here To<br />Connect And<br />Assist You
           </h2>
           <p className="text-[#9CA3AF] text-base md:text-lg mb-12 md:mb-16 leading-relaxed">
-            Have questions about the summit? Need help with registration or logistics? Our team is available to assist you.
+            Have questions about KNGINE? Need help with registration or logistics? Our team is available to assist you.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16">
             <div>
               <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Contact us</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">+31 20 123 4567</p>
+              <p className="text-white font-bold text-base md:text-lg tracking-tight">https://chat.whatsapp.com/C84IEY7Sd2dLZlKtlNtDpW</p>
             </div>
             <div>
               <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Location</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">Horizon Convention Center<br />Amsterdam, Netherlands</p>
+              <p className="text-white font-bold text-base md:text-lg tracking-tight">Richmond College<br />Galle, Sri Lanka</p>
             </div>
             <div>
               <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Email support</h4>
-              <p className="text-white font-bold text-base md:text-lg tracking-tight">info@kngine.lk</p>
+              <p className="text-white font-bold text-base md:text-lg tracking-tight">kngine.rits@gmail.com</p>
             </div>
             <div>
               <h4 className="text-[#6B7280] text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Social media</h4>
               <div className="flex gap-6 mt-2">
-                {['TW', 'LI', 'IG', 'YT'].map(s => (
+                {['FB', 'IG'].map(s => (
                   <span key={s} className="text-white font-bold text-xs cursor-pointer hover:text-[#2563EB] transition-colors tracking-widest">{s}</span>
                 ))}
               </div>
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
 
         <div className="bg-[#1A1A1A] p-8 md:p-12 lg:p-16 rounded-[32px] border border-white/5 shadow-2xl">
           <h3 className="text-xl md:text-2xl font-bold text-white mb-2 tracking-tight uppercase">Get In Touch</h3>
-          <p className="text-[#6B7280] text-xs md:text-sm mb-10 leading-relaxed uppercase tracking-widest">Inquiries about tickets or partnerships.</p>
+          <p className="text-[#6B7280] text-xs md:text-sm mb-10 leading-relaxed uppercase tracking-widest">Inquiries about resistrations or partnerships.</p>
           
           <form className="space-y-6 md:space-y-8">
             <div className="space-y-1">

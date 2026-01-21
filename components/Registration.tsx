@@ -43,22 +43,35 @@ const Registration: React.FC = () => {
 
   const testimonials = [
     {
-      title: "KNGINE'17",
-      img: '/kngine17.png'
+      title: "KNGINE'23",
+      img: '/kngine23.jpg'
     },
-{
-      title: "KNGINE'19",
-      img: '/kngine19.jpg'
-    },
+
 {
       title: "KNGINE'20",
       img: '/kngine20.jpg'
-    }
+    },    
+    
+
+
+    {
+      title: "KNGINE'19",
+      img: '/kngine19.jpg'
+    },
+
+
+    {
+      title: "KNGINE'17",
+      img: '/kngine17.png'
+    },
+
+
+
   ];
 
   return (
     <section
-      id="tickets"
+      id="past"
       className="py-20 md:py-32 px-4 md:px-8 lg:px-16"
     >
       <div className="max-w-[1200px] mx-auto">

@@ -106,7 +106,7 @@ const Map: React.FC = () => {
                 {/* Left Cluster */}
                 <g transform="translate(150, 150)">
                   <rect width="60" height="30" fill="white" opacity="0.1" rx="2" />
-                  <text y="45">Work Shop</text>
+                  <text y="45">TEC WorkShop</text>
                 </g>
                 <g transform="translate(250, 320)">
                   <circle r="4" fill="#2563EB" />
@@ -159,10 +159,7 @@ const Map: React.FC = () => {
                 </g>
 
                 {/* Bottom Sector */}
-                <g transform="translate(620, 520)">
-                  <rect width="30" height="60" fill="white" opacity="0.1" rx="2" />
-                  <text x="-120" y="40" textAnchor="end">EM Karunaratne Building</text>
-                </g>
+                
                 <g transform="translate(700, 680)">
                   <rect width="90" height="25" fill="white" opacity="0.1" rx="2" />
                   <text y="40">Grade 6 Class Rooms</text>
@@ -172,7 +169,7 @@ const Map: React.FC = () => {
                 </g>
                 <g transform="translate(640, 750)">
                   <circle r="4" fill="white" opacity="0.3" />
-                  <text x="12" y="4">Shooting Sports</text>
+                  <text x="12" y="4">Rifle Shooting Arena</text>
                 </g>
 
                 {/* Landmarks */}
@@ -194,7 +191,7 @@ const Map: React.FC = () => {
                   <animate attributeName="r" from="14" to="60" dur="4s" repeatCount="indefinite" />
                   <animate attributeName="opacity" from="0.4" to="0" dur="4s" repeatCount="indefinite" />
                 </circle>
-                <text y="-35" textAnchor="middle" fill="white" fontSize="18" fontWeight="900" className="uppercase tracking-tighter" style={{ textShadow: '0 0 10px rgba(37, 99, 235, 0.8)' }}>Richmond College</text>
+                <text y="-35" textAnchor="middle" fill="white" fontSize="18" fontWeight="900" className="uppercase tracking-tighter" style={{ }}>Richmond College</text>
               </g>
             </svg>
            </div>
@@ -203,10 +200,10 @@ const Map: React.FC = () => {
            <div className="absolute bottom-8 left-8 bg-[#1A1A1A]/95 p-8 rounded-[32px] border border-white/5 shadow-2xl backdrop-blur-2xl max-w-[340px] z-10">
              <div className="flex items-center gap-3 mb-4">
                <div className="w-2.5 h-2.5 bg-[#2563EB] rounded-full shadow-[0_0_12px_#2563EB]" />
-               <h4 className="text-white font-black text-2xl tracking-tighter uppercase leading-none">Summit Venue</h4>
+               <h4 className="text-white font-black text-2xl tracking-tighter uppercase leading-none">KNGINE Venue</h4>
              </div>
              <p className="text-[#9CA3AF] text-base mb-8 font-medium leading-relaxed">
-               Richmond College Campus<br />
+               Richmond College<br />
                Richmond Hill Road, Galle<br />
                Sri Lanka
              </p>
