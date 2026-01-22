@@ -20,9 +20,9 @@ const Contact: React.FC = () => {
       phone: "+94 70 602 6941",
     },
     {
-      event: "cyber Combat",
-      name: "Mahin",
-      phone: "+94 77 311 0252",
+      event: "DesignerX",
+      name: "Lithum",
+      phone: "+94 74 002 5166",
     },
     {
       event: "Registration",
