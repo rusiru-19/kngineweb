@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
   };
 
   return (
-    <a href='/registeration' 
+    <a href='/register' 
      >
     
     <button className={`${baseStyles} ${variants[variant]} ${className}`} >
