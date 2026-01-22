@@ -71,11 +71,7 @@ const Register: React.FC = () => {
       description: "School students from Grades 9 to 13"
     },
   
-    {
-      icon: <Shield className="w-5 h-5" />,
-      title: "Requirements",
-      description: "Carry your School ID on event day"
-    },
+ 
     {
       icon: <AlertCircle className="w-5 h-5" />,
       title: "Prohibited Tools",
