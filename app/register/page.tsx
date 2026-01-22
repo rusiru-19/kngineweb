@@ -245,10 +245,10 @@ const Register: React.FC = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-[#9CA3AF] text-sm">
+                    {/* <div className="flex items-center gap-2 text-[#9CA3AF] text-sm">
                       <Calendar className="w-4 h-4" />
                       <span><strong className="text-white">Deadline:</strong> {comp.deadline}</span>
-                    </div>
+                    </div> */}
                     <div className="flex items-center gap-2 text-[#9CA3AF] text-sm">
                       <CheckCircle className="w-4 h-4" />
                       <span><strong className="text-white">Method:</strong> {comp.method}</span>
