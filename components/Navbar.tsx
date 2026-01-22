@@ -5,7 +5,23 @@ import { Logo, MenuIcon, CloseIcon } from '@/constants';
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const links = ['Home', 'Register', 'Speakers', 'Past', 'Venue', /*'Sponsors' */];
-
+  const Nav =[
+    
+    {
+      name: 'Register',
+      link: 'register'
+    },
+    {
+      name: 'Speakers',
+      link: '#Speakers'
+    },{
+      name: 'Past',
+      link: '#Past'
+    },{
+      name: 'Venue',
+      link: '#venue'
+    }
+  ]
   return (
     <>
       <nav className="mt-6 left-0 right-0 z-[60] flex justify-center px-4 lg:px-16">
@@ -15,13 +31,13 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-2">
               <a href="#home" className="bg-white/5 border border-white/10 px-6 py-2 rounded-full text-white text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors">Home</a>
-              {['Register', 'Speakers', 'Past', 'Venue', /*'Sponsors' */].map((link) => (
+              {Nav.map((nav) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={nav.name}
+                  href={`${nav.link.toLowerCase()}`}
                   className="text-white/60 text-xs font-bold uppercase tracking-widest px-4 py-2 hover:text-white transition-colors"
                 >
-                  {link}
+                  {nav.name}
                 </a>
               ))}
             </div>
@@ -48,14 +64,14 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           <div className="flex flex-col gap-8">
-            {links.map((link) => (
+            {Nav.map((nav) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={nav.name}
+                href={`${nav.link.toLowerCase()}`}
                 className="text-5xl font-black text-white hover:text-[#2563EB] transition-colors uppercase tracking-tighter"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {link}
+                {nav.name}
               </a>
             ))}
           </div>

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { COLORS } from '../constants';
-
+import { COLORS } from '@/constants';
+import Link from 'next/link';
 interface ButtonProps {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'outline';
@@ -20,10 +20,13 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
   };
 
   return (
-    <button className={`${baseStyles} ${variants[variant]} ${className}`} onClick={onClick}>
+    <Link href='/register' >
+    
+    <button className={`${baseStyles} ${variants[variant]} ${className}`} >
       {children}
       {icon && <span className="transition-transform duration-200 group-hover:translate-x-1">{icon}</span>}
     </button>
+    </ Link>
   );
 };
 

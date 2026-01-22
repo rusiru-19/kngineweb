@@ -30,7 +30,7 @@ const App: React.FC = () => {
           <Competitions />
         </FadeInSection>
         
-        <SpeakerGrid />
+        {/* <SpeakerGrid /> */}
         
         
         <FadeInSection>
