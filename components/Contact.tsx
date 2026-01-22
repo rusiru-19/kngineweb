@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Mail, MapPin, Users, Phone } from 'lucide-react';
+import { Mail, MapPin, Users, Phone, Facebook, Github, Instagram, } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const eventIncharges = [
@@ -145,22 +145,24 @@ const Contact: React.FC = () => {
           <h3 className="text-[#6B7280] text-xs font-bold uppercase tracking-widest mb-6">Follow Us</h3>
           <div className="flex justify-center gap-6">
             <a 
-              href="#" 
+              href="https://www.facebook.com/RITS.KNGINE" 
               className="w-14 h-14 bg-white/5 hover:bg-[#1877F2]/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5 hover:border-[#1877F2]/30"
             >
-              <span className="text-white font-black text-sm group-hover:text-[#1877F2] transition-colors">FB</span>
+              <span className="text-white font-black text-sm group-hover:text-[#1877F2] transition-colors">            <Facebook className="w-5 h-5" /></span>
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/richmonditsociety" 
               className="w-14 h-14 bg-white/5 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#F56040] rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5"
             >
-              <span className="text-white font-black text-sm group-hover:text-white transition-colors">IG</span>
+              <span className="text-white font-black text-sm group-hover:text-white transition-colors">            <Instagram className="w-5 h-5" />
+</span>
             </a>
             <a 
-              href="#" 
+              href="https://github.com/richmond-college-ict" 
               className="w-14 h-14 bg-white/5 hover:bg-[#1DA1F2]/20 rounded-2xl flex items-center justify-center transition-all hover:scale-110 group border border-white/5 hover:border-[#1DA1F2]/30"
             >
-              <span className="text-white font-black text-sm group-hover:text-[#1DA1F2] transition-colors">X</span>
+              <span className="text-white font-black text-sm group-hover:text-[#1DA1F2] transition-colors">            <Github className="w-5 h-5" />
+</span>
             </a>
           </div>
         </div>

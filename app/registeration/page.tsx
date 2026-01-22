@@ -271,7 +271,7 @@ const Register: React.FC = () => {
                 Register for all online competitions using the official KNGINE'26 registration form
               </p>
               <a 
-                href="/"
+                href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSfi2ahsbBPAHM7MVOUApbk_ccnQAKzjrY3tps0BkHGkGPdq7g%2Fviewform%3Fusp%3Dsend_form&dsh=S-1623883460%3A1769100846721845&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSfi2ahsbBPAHM7MVOUApbk_ccnQAKzjrY3tps0BkHGkGPdq7g%2Fviewform%3Fusp%3Dsend_form&ifkv=AXbMIuBF1TMO-TSOx94_UMYgNs08LOqMbeJ_ny-DhsqWPq2yrDBA6A1LeyJfxvrdXuj8oWyrkdFPxw&ltmpl=forms&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
                 className="inline-block bg-white text-[#2563EB] hover:bg-black hover:text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest  transition-all duration-400 active:scale-95 text-sm md:text-base"
               >
                 Register Now
