@@ -11,7 +11,7 @@ const Competitions: React.FC = () => {
       logo: '/comps/quiz.png', 
       desc: 'The ultimate battle of wits for the brightest minds in the region.',
       info: ['Team of 4 members', 'General IT Knowledge', 'Live Stage Final'],
-      status: 'OPEN',
+      status: 'Comming Soon',
       featured: false
     },
     { 
@@ -20,7 +20,7 @@ const Competitions: React.FC = () => {
       logo: '/comps/codecom.png', 
       desc: 'A high-stakes algorithmic challenge for young developers.',
       info: ['Individual entry', 'Competitive Programming', '3 Hours duration'],
-      status: 'OPEN',
+      status: 'Comming Soon',
       featured: false 
     },
     { 
@@ -29,7 +29,7 @@ const Competitions: React.FC = () => {
       logo: '/comps/cybercombat.png', 
       desc: 'Strategic gaming tournament testing reflexes and teamwork.',
       info: ['Team of 4 members', 'FPS/MOBA Focus', 'Direct Elimination'],
-      status: 'OPEN',
+      status: 'Comming Soon',
       featured: true
     },
     { 
@@ -38,7 +38,7 @@ const Competitions: React.FC = () => {
       logo: '/comps/designerx.png', 
       desc: 'Visual storytelling and digital art competition for creative visionaries.',
       info: ['Individual entry', 'Brand Identity', 'Visual Design'],
-      status: 'OPEN',
+      status: 'Comming Soon',
       featured: false
     }
   ];

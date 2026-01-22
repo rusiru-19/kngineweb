@@ -20,9 +20,9 @@ const App: React.FC = () => {
       <main>
         <Hero />
         
-        <FadeInSection>
+        {/* <FadeInSection>
           <Sponsors />
-        </FadeInSection>
+        </FadeInSection> */}
         
         {/* <FeatureCards /> */}
         

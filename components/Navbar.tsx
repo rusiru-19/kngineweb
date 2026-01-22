@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     
     {
       name: 'Register',
-      link: 'register'
+      link: 'registeration'
     },
     {
       name: 'Speakers',

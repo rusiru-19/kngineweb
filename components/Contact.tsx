@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-22 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Header Section */}

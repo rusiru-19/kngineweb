@@ -20,13 +20,14 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
   };
 
   return (
-    <Link href='/register' >
+    <a href='/registeration' 
+     >
     
     <button className={`${baseStyles} ${variants[variant]} ${className}`} >
       {children}
       {icon && <span className="transition-transform duration-200 group-hover:translate-x-1">{icon}</span>}
     </button>
-    </ Link>
+    </ a>
   );
 };
 

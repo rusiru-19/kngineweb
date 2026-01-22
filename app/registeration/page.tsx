@@ -1,6 +1,34 @@
-"use client"
 import React from 'react';
 import { Calendar, MapPin, Shield, AlertCircle, CheckCircle, Clock, Users, Award } from 'lucide-react';
+import Script from "next/script"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "KNGINE’26 Registration | Inter-School ICT Competitions – Richmond College",
+  description:
+    "Register for KNGINE’26, the annual inter-school ICT day by Richmond College ICT Society (RITS). Participate in competitions like Intellect, Codecom, DesignerX, Web Development, and Cyber Combat.",
+  keywords: [
+    "KNGINE 26",
+    "Richmond College ICT",
+    "Inter-School ICT Competitions",
+    "Intellect Quiz",
+    "DesignerX",
+    "Codecom",
+    "Web Development",
+    "Cyber Combat",
+    "RITS",
+    "Watch Dogs Legion",
+    "Student Competitions",
+    "ICT Day",
+  ],
+  openGraph: {
+    title: "KNGINE’26 Registration | Inter-School ICT Competitions",
+    description:
+      "Register for KNGINE’26 competitions organized by Richmond College ICT Society. Join Intellect, Codecom, DesignerX, Web Development, and Cyber Combat events.",
+    url: "https://kngine.richmondcollege.lk/registration",
+  },
+}
+
 
 const Register: React.FC = () => {
   const competitions = [
@@ -72,6 +100,37 @@ const Register: React.FC = () => {
 
   return (
     <div className="bg-black min-h-screen">
+      <Script
+  id="intellect-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalEvent",
+      "name": "Intellect – Inter-School IT & Tech Quiz (KNGINE’26)",
+      "description": "An inter-school IT & Tech quiz competition organized under KNGINE’26 by the Richmond College ICT Society.",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "startDate": "2026-02-12T09:00:00+05:30", // <-- add start date/time
+      "endDate": "2026-02-12T17:00:00+05:30",   // <-- optional, recommended
+      "organizer": {
+        "@type": "Organization",
+        "name": "Richmond College ICT Society (RITS)",
+        "url": "https://kngine.richmondcollege.lk"
+      },
+      "isAccessibleForFree": true,
+      "url": "https://kngine.richmondcollege.lk/intellect",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://example.com/registration",
+        "availability": "https://schema.org/InStock",
+        "price": "0",
+        "priceCurrency": "LKR"
+      }
+    }),
+  }}
+/>
+
       {/* Background Pattern */}
       <div className="fixed inset-0 bg-[radial-gradient(#404040_1px,transparent_1px)] [background-size:20px_20px] opacity-30" />
       <div className="fixed inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]" />

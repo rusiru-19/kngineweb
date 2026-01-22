@@ -25,6 +25,7 @@ const Hero: React.FC = () => {
                 <p className="text-[#9CA3AF] text-base md:text-lg leading-relaxed max-w-md mb-12 font-medium">
             KNGINE: LEGION embodies the principles of collective strength and unity, reflecting how generation of richmond dites have come together to build the proud legacy of the college
                 </p>
+                
                 <Button 
                   variant="primary" 
                   className="w-full sm:w-auto px-10 py-5 text-sm uppercase tracking-widest font-black" 
@@ -32,6 +33,7 @@ const Hero: React.FC = () => {
                 >
                   REGISTER NOW
                 </Button>
+                
               </div>
               
               

@@ -110,10 +110,46 @@ const Registration: React.FC = () => {
   );
 
   return (
-    <section id="past" className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
-      <div className="max-w-[1200px] mx-auto">
+    <section  className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
+      <div className="max-w-[1200px]  mx-auto">
+        {/* Register Section */}
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start mb-12 sm:mb-16">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-black text-white leading-[0.8] tracking-tighter uppercase">
+            REGISTER
+            <br />
+            NOW
+          </h2>
+          <div className="flex flex-col justify-end h-full">
+            <p className="text-[#9CA3AF] text-base sm:text-lg font-medium leading-relaxed max-w-sm lg:ml-auto lg:text-right">
+              Secure your spot at the KNGINE Legion by registering
+            </p>
+          </div>
+        </div>
+
+        {/* Countdown */}
+        <div className="bg-[#121212] rounded-2xl sm:rounded-3xl lg:rounded-[40px] p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col md:flex-row justify-between items-center relative overflow-hidden border border-white/5">
+          <div className="relative z-10 w-full">
+            <p className="text-[#6B7280] font-black text-[10px] sm:text-xs uppercase tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-center md:text-left">
+              Revolution Starts In:
+            </p>
+
+            <div className="flex gap-3 sm:gap-6 md:gap-8 lg:gap-16 items-baseline justify-center md:justify-start flex-wrap">
+              <CountdownUnit value={timeLeft.days} label="DAYS" isAnimating={animatingUnits.days} />
+              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white/20">:</div>
+              <CountdownUnit value={timeLeft.hours} label="HOURS" isAnimating={animatingUnits.hours} />
+              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white/20">:</div>
+              <CountdownUnit value={timeLeft.minutes} label="MINUTES" isAnimating={animatingUnits.minutes} />
+              
+            </div>
+          </div>
+
+          {/* Graphic */}
+          <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 opacity-50">
+            <img src="/countdown.png" alt="" width={400} className="" />
+          </div>
+        </div>
         {/* Header */}
-        <div className="flex justify-between items-center mb-8 md:mb-12">
+        <div id="past" className="flex justify-between mt-40 items-center mb-8 md:mb-12">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tighter">
             What Past Look Like
           </h3>
@@ -134,7 +170,7 @@ const Registration: React.FC = () => {
         </div>
 
         {/* Testimonials with Navigation */}
-        <div className="relative mb-16 sm:mb-20 md:mb-24 lg:mb-32">
+        <div  className="relative mb-1 sm:mb-2 md:mb-4 lg:mb-2">
           <div className="overflow-hidden">
             <div 
               className="flex gap-4 sm:gap-6 transition-transform duration-500 ease-out"
@@ -181,42 +217,7 @@ const Registration: React.FC = () => {
           )}
         </div>
 
-        {/* Register Section */}
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start mb-12 sm:mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-black text-white leading-[0.8] tracking-tighter uppercase">
-            REGISTER
-            <br />
-            NOW
-          </h2>
-          <div className="flex flex-col justify-end h-full">
-            <p className="text-[#9CA3AF] text-base sm:text-lg font-medium leading-relaxed max-w-sm lg:ml-auto lg:text-right">
-              Secure your spot at the KNGINE Legion by registering
-            </p>
-          </div>
-        </div>
-
-        {/* Countdown */}
-        <div className="bg-[#121212] rounded-2xl sm:rounded-3xl lg:rounded-[40px] p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col md:flex-row justify-between items-center relative overflow-hidden border border-white/5">
-          <div className="relative z-10 w-full">
-            <p className="text-[#6B7280] font-black text-[10px] sm:text-xs uppercase tracking-[0.2em] mb-6 sm:mb-8 md:mb-12 text-center md:text-left">
-              Revolution Starts In:
-            </p>
-
-            <div className="flex gap-3 sm:gap-6 md:gap-8 lg:gap-16 items-baseline justify-center md:justify-start flex-wrap">
-              <CountdownUnit value={timeLeft.days} label="DAYS" isAnimating={animatingUnits.days} />
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white/20">:</div>
-              <CountdownUnit value={timeLeft.hours} label="HOURS" isAnimating={animatingUnits.hours} />
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white/20">:</div>
-              <CountdownUnit value={timeLeft.minutes} label="MINUTES" isAnimating={animatingUnits.minutes} />
-              
-            </div>
-          </div>
-
-          {/* Graphic */}
-          <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 opacity-50">
-            <img src="/countdown.png" alt="" width={400} className="" />
-          </div>
-        </div>
+        
       </div>
 
       <style>{`
