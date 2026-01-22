@@ -1,6 +1,7 @@
 
+"use client"
 import React from 'react';
-import { CompetitionLogos, ArrowRightIcon } from '../constants';
+import { CompetitionLogos, ArrowRightIcon } from '@/constants';
 
 const Competitions: React.FC = () => {
   const competitions = [

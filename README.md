@@ -1,30 +1,36 @@
-# KNGINE | Next-Gen AI Summit Design System
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Design Tokens
+## Getting Started
 
-### Colors
-- **Background (Main)**: `#0B0B0B`
-- **Surface (Cards)**: `#121212`
-- **Surface Light**: `#1A1A1A`
-- **Primary Accent**: `#2563EB` (Electric Blue)
-- **Secondary Accent**: `#3B82F6`
-- **Text Primary**: `#FFFFFF`
-- **Text Secondary**: `#9CA3AF`
-- **Text Muted**: `#6B7280`
+First, run the development server:
 
-### Typography
-- **Primary Font**: 'Inter', sans-serif
-- **Hero Headings**: 800-900 Weight, -0.05em tracking
-- **Section Titles**: 700 Weight, Uppercase, tracking-tighter
-- **Body**: 400 Weight, 1.6 leading
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Spacing & Radius
-- **Radius (Cards)**: 32px
-- **Radius (Buttons)**: 999px
-- **Section Gap**: 80px - 120px
-- **Card Padding**: 32px - 40px
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Responsive Breakpoints
-- **Mobile**: < 640px (1 column)
-- **Tablet**: 640px - 1024px (2 columns)
-- **Desktop**: > 1024px (Grid-based 12 cols / 3-4 columns)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

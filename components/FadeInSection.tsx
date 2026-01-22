@@ -1,4 +1,5 @@
 
+"use client"
 import React, { useEffect, useRef, useState } from 'react';
 
 const FadeInSection: React.FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => {

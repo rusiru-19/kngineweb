@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Calendar, MapPin, Shield, AlertCircle, CheckCircle, Clock, Users, Award } from 'lucide-react';
 
@@ -212,7 +213,7 @@ const Register: React.FC = () => {
               </p>
               <a 
                 href="/"
-                className="inline-block bg-white text-[#2563EB] px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-gray-100 transition-all active:scale-95 text-sm md:text-base"
+                className="inline-block bg-white text-[#2563EB] hover:bg-black hover:text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest  transition-all duration-400 active:scale-95 text-sm md:text-base"
               >
                 Register Now
               </a>

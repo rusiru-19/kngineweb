@@ -1,6 +1,7 @@
+"use client"
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { StarburstGraphic, ArrowRightIcon } from '../constants';
+import { StarburstGraphic, ArrowRightIcon } from '@/constants';
 
 /**
  * 🎯 CHANGE THIS DATE

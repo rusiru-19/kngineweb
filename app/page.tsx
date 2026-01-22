@@ -1,17 +1,16 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Sponsors from './components/Sponsors';
-import FeatureCards from './components/FeatureCards';
-import Competitions from './components/Competitions';
-import SpeakerGrid from './components/SpeakerGrid';
-import WhyAttend from './components/WhyAttend';
-import Registration from './components/Registration';
-import Contact from './components/Contact';
-import Map from './components/Map';
-import Footer from './components/Footer';
-import FadeInSection from './components/FadeInSection';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Sponsors from '@/components/Sponsors';
+import Competitions from '@/components/Competitions';
+import SpeakerGrid from '@/components/SpeakerGrid';
+import WhyAttend from '@/components/WhyAttend';
+import Registration from '@/components/Registration';
+import Contact from '@/components/Contact';
+import Map from '@/components/Map';
+import Footer from '@/components/Footer';
+import FadeInSection from '@/components/FadeInSection';
 
 const App: React.FC = () => {
   return (
@@ -33,9 +32,6 @@ const App: React.FC = () => {
         
         <SpeakerGrid />
         
-        <FadeInSection>
-          {/* <WhyAttend /> */}
-        </FadeInSection>
         
         <FadeInSection>
           <Registration />

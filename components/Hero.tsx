@@ -1,5 +1,6 @@
+"use client"
 import React from 'react';
-import { GeometricSymbol, ArrowRightIcon } from '../constants';
+import { GeometricSymbol, ArrowRightIcon } from '@/constants';
 import Button from './Button';
 import FadeInSection from './FadeInSection';
 

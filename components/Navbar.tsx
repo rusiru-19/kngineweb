@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from 'react';
-import { Logo, MenuIcon, CloseIcon } from '../constants';
+import { Logo, MenuIcon, CloseIcon } from '@/constants';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

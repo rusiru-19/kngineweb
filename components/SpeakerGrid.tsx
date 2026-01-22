@@ -1,7 +1,8 @@
 
+"use client"
 import React from 'react';
 import FadeInSection from './FadeInSection';
-import { ArrowRightIcon } from '../constants';
+import { ArrowRightIcon } from '@/constants';
 
 const SpeakerGrid: React.FC = () => {
   const speakers = [
