@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
       phone: "+94 77 351 0195",
     },
     {
-      event: "Competition",
+      event: "Competitions",
       name: "Thilina Methsahan",
       phone: "+94 77 278 9984",
     },
@@ -21,12 +21,12 @@ const Contact: React.FC = () => {
     },
     {
       event: "DesignerX",
-      name: "Lithum",
+      name: "Lithum Senvindu",
       phone: "+94 74 002 5166",
     },
     {
       event: "Registration",
-      name: "Dinel",
+      name: "Dinel Dilmith",
       phone: "+94 77 007 5073",
     },
     {

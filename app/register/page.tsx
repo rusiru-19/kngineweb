@@ -42,7 +42,7 @@ const Register: React.FC = () => {
       name: "Codecom",
       type: "Coding",
       deadline: "8th Feb 2026",
-      method: "Online Form"
+      method: "Work Submission"
     },
     {
       name: "Web Development",
