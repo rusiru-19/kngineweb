@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     {
       event: "president",
       name: "Dulen Gamage",
-      phone: "+94 77 351 0195",
+      phone: "0765561721",
     },
     {
       event: "Competitions",

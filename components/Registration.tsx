@@ -36,7 +36,6 @@ const Registration: React.FC = () => {
     { title: "KNGINE'19", img: "/kngine19.jpg" },
     { title: "KNGINE'17", img: "/kngine17.png" },
     { title: "KNGINE'16", img: "/kngine23.jpg" },
-    { title: "KNGINE'15", img: "/kngine20.jpg" },
   ];
 
   const cardsPerView = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
@@ -161,11 +160,18 @@ const Registration: React.FC = () => {
               <ArrowRightIcon className="w-5 h-5 rotate-180" />
             </button>
             <button 
-            onClick={handleNext}
-            disabled={currentIndex === maxIndex}
-            className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#0B0B0B]">
-              <ArrowRightIcon  className="w-5 h-5" />
+              onClick={handleNext}
+              disabled={currentIndex === maxIndex}
+              className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors
+                ${currentIndex === maxIndex
+                  ? "border border-white/10 text-white/40 cursor-not-allowed"
+                  : "bg-white text-[#0B0B0B] hover:bg-white/90"
+                }
+              `}
+            >
+              <ArrowRightIcon className="w-5 h-5" />
             </button>
+
           </div>
         </div>
 
