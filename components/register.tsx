@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, MapPin, Shield, AlertCircle, CheckCircle, Clock, Users, Award } from 'lucide-react';
-
+import Navbar from './Navbar';
 export const Register: React.FC = () => {
   const competitions = [
     {
@@ -70,11 +70,13 @@ export const Register: React.FC = () => {
   ];
 
   return (
-    <div className="bg-black min-h-screen">
+    <>          <Navbar />
+  <div className="bg-black min-h-screen">
       {/* Background Pattern */}
       <div className="fixed inset-0 bg-[radial-gradient(#404040_1px,transparent_1px)] [background-size:20px_20px] opacity-30" />
       <div className="fixed inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]" />
-
+     
+      
       {/* Content */}
       <div className="relative">
         {/* Hero Section */}
@@ -240,6 +242,8 @@ export const Register: React.FC = () => {
         </section>
       </div>
     </div>
+    </>
+
   );
 };
 

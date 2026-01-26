@@ -2,7 +2,7 @@
 "use client"
 import React from 'react';
 import { CompetitionLogos, ArrowRightIcon } from '@/constants';
-
+import Link from 'next/link';
 const Competitions: React.FC = () => {
   const competitions = [
     { 
@@ -11,8 +11,9 @@ const Competitions: React.FC = () => {
       logo: '/comps/quiz.png', 
       desc: 'The ultimate battle of wits for the brightest minds in the region.',
       info: ['Team of 4 members', 'General IT Knowledge', 'Live Stage Final'],
-      status: 'Comming Soon',
-      featured: false
+      status: 'Register Now',
+      featured: false,
+      url: '/intellect'
     },
     { 
       id: '02',
@@ -20,8 +21,9 @@ const Competitions: React.FC = () => {
       logo: '/comps/codecom.png', 
       desc: 'A high-stakes algorithmic challenge for young developers.',
       info: ['Individual entry', 'Competitive Programming', '3 Hours duration'],
-      status: 'Comming Soon',
-      featured: false 
+      status: 'Register Now',
+      featured: false,
+      url: '/codecom'
     },
     { 
       id: '03',
@@ -29,8 +31,9 @@ const Competitions: React.FC = () => {
       logo: '/comps/cybercombat.png', 
       desc: 'Strategic gaming tournament testing reflexes and teamwork.',
       info: ['Team of 4 members', 'FPS/MOBA Focus', 'Direct Elimination'],
-      status: 'Comming Soon',
-      featured: true
+      status: 'Register Now',
+      featured: true,
+      url: '/cybercombat'
     },
     { 
       id: '04',
@@ -38,8 +41,9 @@ const Competitions: React.FC = () => {
       logo: '/comps/designerx.png', 
       desc: 'Visual storytelling and digital art competition for creative visionaries.',
       info: ['Individual entry', 'Brand Identity', 'Visual Design'],
-      status: 'Comming Soon',
-      featured: false
+      status: 'Register Now',
+      featured: false,
+      url: '/designerx'
     }
   ];
 
@@ -96,7 +100,7 @@ const Competitions: React.FC = () => {
                   ))}
                 </ul>
               </div>
-
+                  <Link href={comp.url} target="_blank" rel="noopener noreferrer">
               <button className={`w-full py-4 rounded-full font-black text-[10px] uppercase tracking-[0.2em] transition-all active:scale-95 flex items-center justify-center gap-2 ${
                 comp.featured 
                 ? 'bg-white text-[#2563EB] hover:shadow-xl' 
@@ -104,6 +108,7 @@ const Competitions: React.FC = () => {
               }`}>
                 Register Now <ArrowRightIcon className="w-3 h-3 -rotate-45" />
               </button>
+                </Link>
             </div>
           ))}
         </div>
