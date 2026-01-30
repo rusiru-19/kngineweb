@@ -20,7 +20,7 @@ const Competitions: React.FC = () => {
       name: 'Code__com',
       logo: '/comps/codecom.png', 
       desc: 'A high-stakes algorithmic challenge for young developers.',
-      info: ['Individual entry', 'Competitive Programming', '3 Hours duration'],
+      info: ['Individual entry', 'Competitive Programming', 'submit github Link'],
       status: 'Register Now',
       featured: false,
       url: '/codecom'
@@ -32,7 +32,7 @@ const Competitions: React.FC = () => {
       desc: 'Strategic gaming tournament testing reflexes and teamwork.',
       info: ['Team of 4 members', 'FPS/MOBA Focus', 'Direct Elimination'],
       status: 'Register Now',
-      featured: true,
+      featured: false,
       url: '/cybercombat'
     },
     { 

@@ -17,7 +17,7 @@ const IntellectPage: React.FC = () => {
   const participationDetails = [
     { icon: <Users className="w-5 h-5" />, label: "Eligibility", value: "Open to students of participating schools" },
     { icon: <Target className="w-5 h-5" />, label: "School Limit", value: "One team per school" },
-    { icon: <Brain className="w-5 h-5" />, label: "Team Size", value: "Maximum of 3 students per team" },
+    { icon: <Brain className="w-5 h-5" />, label: "Team Size", value: "Maximum of 4 students per team" },
     { icon: <Shield className="w-5 h-5" />, label: "Registration", value: "Must be done at your school (not online)" },
     { icon: <Clock className="w-5 h-5" />, label: "Deadline", value: "6th February 2026" }
   ];
@@ -69,7 +69,7 @@ const IntellectPage: React.FC = () => {
                 Intellect
               </h1>
               <div className="flex items-center justify-center gap-3 text-[#9CA3AF] text-sm md:text-base mb-6">
-                <span className="font-bold uppercase tracking-widest">Team (3 Members)</span>
+                <span className="font-bold uppercase tracking-widest">Team (4 Members)</span>
                 <span className="w-1.5 h-1.5 bg-[#10B981] rounded-full"></span>
                 <span className="font-bold uppercase tracking-widest">On-Site</span>
               </div>
@@ -169,75 +169,7 @@ const IntellectPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Rules & Scoring */}
-        <section className="px-4 sm:px-6 md:px-8 lg:px-16 pb-12 md:pb-16">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-8 md:mb-12">
-              Rules & Scoring
-            </h2>
-            
-            {/* Rules */}
-            <div className="bg-[#121212] p-6 sm:p-8 md:p-10 rounded-3xl border border-white/5 mb-8">
-              <div className="grid gap-4 md:gap-6">
-                {rules.map((rule, idx) => (
-                  <div 
-                    key={idx}
-                    className="flex items-start gap-4 p-5 bg-[#1A1A1A] rounded-2xl border border-white/5 hover:border-red-500/30 transition-all group"
-                  >
-                    <div className="w-8 h-8 bg-red-500/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors">
-                      <Shield className="w-4 h-4 text-red-500" />
-                    </div>
-                    <p className="text-[#9CA3AF] text-sm leading-relaxed">
-                      {rule.split(':').map((part, i) => 
-                        i === 0 ? <strong key={i} className="text-white">{part}:</strong> : part
-                      )}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Scoring Table */}
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight mb-6">
-                Scoring Table
-              </h3>
-              <div className="bg-[#121212] rounded-3xl border border-white/5 overflow-hidden">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="bg-[#1A1A1A] border-b border-white/5">
-                        <th className="text-left px-6 py-4 text-white font-black text-sm uppercase tracking-wide">
-                          Round
-                        </th>
-                        <th className="text-left px-6 py-4 text-white font-black text-sm uppercase tracking-wide">
-                          Points
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {scoringTable.map((item, idx) => (
-                        <tr 
-                          key={idx}
-                          className="border-b border-white/5 hover:bg-[#1A1A1A]/50 transition-colors"
-                        >
-                          <td className="px-6 py-4 text-[#9CA3AF] text-sm md:text-base font-medium">
-                            {item.round}
-                          </td>
-                          <td className="px-6 py-4">
-                            <span className="inline-block bg-[#10B981]/10 text-[#10B981] px-4 py-1.5 rounded-full text-sm font-bold">
-                              {item.points}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    
 
         {/* Contact Section */}
         <section className="px-4 sm:px-6 md:px-8 lg:px-16 pb-16 md:pb-24">
@@ -270,24 +202,7 @@ const IntellectPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Important Note */}
-        <section className="px-4 sm:px-6 md:px-8 lg:px-16 pb-16 md:pb-24">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-yellow-500/20">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-yellow-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <AlertCircle className="w-5 h-5 text-yellow-500" />
-                </div>
-                <div>
-                  <h4 className="text-white font-black text-base uppercase tracking-tight mb-2">Important Reminder</h4>
-                  <p className="text-[#9CA3AF] text-sm leading-relaxed">
-                    Registration must be completed at your school by 6th February 2026. Ensure all team members are present on the day of the competition. Electronic devices are strictly prohibited during all rounds. Study hard and good luck!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </div>
     </div>
   );

@@ -1,33 +1,79 @@
 import React from 'react';
-import { Gamepad2, Users, Shield, Clock, Trophy, AlertCircle, Phone, Target } from 'lucide-react';
+import {
+  Gamepad2,
+  Users,
+  Shield,
+  Clock,
+  Trophy,
+  AlertCircle,
+  Phone,
+  Target,
+  Crosshair,
+} from "lucide-react";
 
 const CyberCombatPage: React.FC = () => {
   const contacts = [
     { name: "Mahin", phone: "+94 77 311 0252" },
-    { name: "Randula", phone: "+94 70 602 6941" }
+    { name: "Randula", phone: "+94 70 602 6941" },
   ];
 
   const teamEligibility = [
-    { icon: <Users className="w-5 h-5" />, label: "Eligibility", value: "Open to all school students" },
-    { icon: <Target className="w-5 h-5" />, label: "Roster", value: "5 Main Players (same school), 1 Substitute (optional)" },
-    { icon: <Shield className="w-5 h-5" />, label: "Requirements", value: "Names, details, and Riot IDs for all players must be provided at registration" },
-    { icon: <AlertCircle className="w-5 h-5" />, label: "Match Day", value: "No roster changes unless pre-approved" }
+    {
+      icon: <Users className="w-5 h-5" />,
+      label: "Eligibility",
+      value: "Open to all school students",
+    },
+    {
+      icon: <Target className="w-5 h-5" />,
+      label: "Team Size",
+      value: "5 Main Players + 1 Substitute (optional)",
+    },
+    {
+      icon: <Shield className="w-5 h-5" />,
+      label: "Player Accounts",
+      value: "Players must use their own COD Mobile accounts",
+    },
+    {
+      icon: <AlertCircle className="w-5 h-5" />,
+      label: "Roster Lock",
+      value: "No roster changes on match day unless approved",
+    },
   ];
 
   const registrationConduct = [
-    "Account Rules: Players must use their own Valorant accounts; account sharing is prohibited",
-    "Attendance: Teams must arrive 15 minutes before their scheduled match",
-    "Forfeit Policy: Failure to show within 10 minutes results in a forfeit",
-    "Behavior: Zero tolerance for toxicity or harassment",
-    "Anti-Cheat: Any cheating leads to immediate disqualification"
+    "Accounts: No account sharing or boosting allowed",
+    "Devices: Only mobile devices are permitted (no emulators)",
+    "Attendance: Teams must be ready 10 minutes before match time",
+    "Behavior: Toxic behavior or abuse leads to disqualification",
+    "Fair Play: Any form of cheating or exploits are strictly prohibited",
   ];
 
   const matchFormat = [
-    { icon: <Gamepad2 className="w-5 h-5" />, label: "Mode", value: "5v5, Unrated" },
-    { icon: <Trophy className="w-5 h-5" />, label: "Structure", value: "Best of 1 (BO1) or Best of 3 (BO3) depending on stage" },
-    { icon: <Target className="w-5 h-5" />, label: "Victory Condition", value: "First team to 13 rounds wins" },
-    { icon: <Clock className="w-5 h-5" />, label: "Overtime", value: "If score reaches 12-12, overtime rules apply" },
-    { icon: <Shield className="w-5 h-5" />, label: "Map Selection", value: "Determined via a Map Banning Phase between teams" }
+    {
+      icon: <Gamepad2 className="w-5 h-5" />,
+      label: "Game Mode",
+      value: "Multiplayer (Search & Destroy / Hardpoint)",
+    },
+    {
+      icon: <Trophy className="w-5 h-5" />,
+      label: "Match Type",
+      value: "Best of 3 (BO3)",
+    },
+    {
+      icon: <Crosshair className="w-5 h-5" />,
+      label: "Win Condition",
+      value: "First team to win 2 matches",
+    },
+    {
+      icon: <Clock className="w-5 h-5" />,
+      label: "Match Duration",
+      value: "Depends on selected mode",
+    },
+    {
+      icon: <Shield className="w-5 h-5" />,
+      label: "Map Selection",
+      value: "Maps will be announced before the tournament",
+    },
   ];
 
   return (
@@ -46,9 +92,9 @@ const CyberCombatPage: React.FC = () => {
                 Cyber Combat
               </h1>
               <div className="flex items-center justify-center gap-3 text-[#9CA3AF] text-sm md:text-base mb-6">
-                <span className="font-bold uppercase tracking-widest">VALORANT</span>
+                <span className="font-bold uppercase tracking-widest">COD MOBILE</span>
                 <span className="w-1.5 h-1.5 bg-[#FF4655] rounded-full"></span>
-                <span className="font-bold uppercase tracking-widest">5v5 Tactical Shooter</span>
+                <span className="font-bold uppercase tracking-widest">Tactical Shooter</span>
               </div>
               <p className="text-[#9CA3AF] text-lg sm:text-xl md:text-2xl italic max-w-3xl mx-auto leading-relaxed mb-4">
                 "The battlefield is digital. The stakes are real. Show no mercy."

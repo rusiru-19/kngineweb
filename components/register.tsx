@@ -10,12 +10,6 @@ export const Register: React.FC = () => {
       method: "Online Form + Work Submission"
     },
     {
-      name: "Codecom",
-      type: "Coding",
-      deadline: "8th Feb 2026",
-      method: "Online Form"
-    },
-    {
       name: "Web Development",
       type: "Web Dev",
       deadline: "8th Feb 2026",
@@ -96,17 +90,8 @@ export const Register: React.FC = () => {
         {/* Event Info Cards */}
         <section className="px-4 sm:px-6 md:px-8 lg:px-16 pb-12 md:pb-16">
           <div className="max-w-[1200px] mx-auto">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {/* Theme Card */}
-              <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-white/5 hover:border-[#2563EB]/30 transition-all">
-                <div className="w-12 h-12 bg-[#2563EB]/10 rounded-2xl flex items-center justify-center mb-4">
-                  <Shield className="w-6 h-6 text-[#2563EB]" />
-                </div>
-                <h3 className="text-white font-black text-lg uppercase tracking-tight mb-2">Theme</h3>
-                <p className="text-[#9CA3AF] text-sm leading-relaxed">
-                  <strong className="text-white">Watch Dogs: Legion</strong> – Hacktivism, resistance, and digital revolution
-                </p>
-              </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6">
+   
 
               {/* Date Card */}
               <div className="bg-[#121212] p-6 md:p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition-all">

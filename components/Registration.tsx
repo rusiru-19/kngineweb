@@ -35,7 +35,6 @@ const Registration: React.FC = () => {
     { title: "KNGINE'20", img: "/kngine20.jpg" },
     { title: "KNGINE'19", img: "/kngine19.jpg" },
     { title: "KNGINE'17", img: "/kngine17.png" },
-    { title: "KNGINE'16", img: "/kngine23.jpg" },
   ];
 
   const cardsPerView = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
