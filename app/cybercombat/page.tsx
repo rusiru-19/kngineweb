@@ -52,22 +52,22 @@ const CyberCombatPage: React.FC = () => {
     {
       icon: <Gamepad2 className="w-5 h-5" />,
       label: "Game Mode",
-      value: "Multiplayer (Search & Destroy / Hardpoint)",
+      value: "Battleroyal (Last team standing wins)",
     },
     {
       icon: <Trophy className="w-5 h-5" />,
-      label: "Match Type",
-      value: "Best of 3 (BO3)",
+      label: "Squads",
+      value: "Teams of 5 players",
     },
     {
       icon: <Crosshair className="w-5 h-5" />,
       label: "Win Condition",
-      value: "First team to win 2 matches",
+      value: "Last team standing wins the match",
     },
     {
       icon: <Clock className="w-5 h-5" />,
       label: "Match Duration",
-      value: "Depends on selected mode",
+      value: "Depends on elimination time, typically 20-30 minutes",
     },
     {
       icon: <Shield className="w-5 h-5" />,
