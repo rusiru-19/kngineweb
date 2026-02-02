@@ -207,6 +207,20 @@ const CyberCombatPage: React.FC = () => {
               </p>
             </div>
           </div>
+           <div className="bg-gradient-to-r mt-15 from-[#2563EB] to-[#1e40af] p-8 md:p-12 rounded-3xl text-center">
+              <h3 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tight mb-4">
+                Ready to Compete?
+              </h3>
+              <p className="text-white/90 text-base md:text-lg mb-8 max-w-2xl mx-auto">
+                Register for CyberCombat using the official KNGINE'26 registration form
+              </p>
+              <a 
+                href="https://forms.gle/w2THJwedXJJ3EnEG7"
+                className="inline-block bg-white text-[#2563EB] px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-gray-100 transition-all active:scale-95 text-sm md:text-base"
+              >
+                Register Now
+              </a>
+            </div>
         </section>
 
         {/* Contact Section */}
