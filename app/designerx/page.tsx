@@ -224,7 +224,7 @@ const DesignerXPage: React.FC = () => {
                 Register for DesignerX using the official KNGINE'26 registration form
               </p>
               <a 
-                href="https://forms.gle/XJStJLVmuMQK7Yg2A"
+                href="https://forms.gle/9J6ReigTcWUMxTys6"
                 className="inline-block bg-white text-[#2563EB] px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-gray-100 transition-all active:scale-95 text-sm md:text-base"
               >
                 Register Now
