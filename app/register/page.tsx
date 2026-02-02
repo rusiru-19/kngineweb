@@ -8,32 +8,29 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kngine.richmondcollege.lk"),
 
   title: {
-    default: "KNGINE | Richmond College ICT Day",
+    default: "Registration & Guidelines | KNGINE",
     template: "%s | KNGINE",
   },
 
   description:
-    "KNGINE is the annual ICT Day organized by the Richmond College ICT Society (RITS), featuring innovative technology events, competitions, and digital excellence.",
+    "Register for KNGINE 2026, the annual Inter-School ICT Day organized by the Richmond College ICT Society (RITS). View guidelines, competitions, deadlines, and event details.",
 
   keywords: [
-    "KNGINE",
-    "Richmond College",
-    "Richmond College ICT Society",
+    "KNGINE 2026",
+    "Richmond College ICT Day",
     "RITS",
-    "ICT Day Sri Lanka",
-    "School ICT Competition",
-    "Richmond ICT",
-    "KNGINE Legion",
-    "Technology Events Sri Lanka",
-    "Student ICT Competitions",
+    "School ICT Competition Sri Lanka",
+    "KNGINE Registration",
+    "ICT Day Galle",
+    "Student Technology Events",
   ],
 
-  authors: [{ name: "Rusiru Thamara" }],
+  authors: [{ name: "Richmond College ICT Society" }],
   creator: "Richmond College ICT Society",
   publisher: "Richmond College",
 
   alternates: {
-    canonical: "https://kngine.richmondcollege.lk",
+    canonical: "https://kngine.richmondcollege.lk/register",
   },
 
   robots: {
@@ -49,17 +46,17 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "KNGINE | Richmond College ICT Day",
+    title: "Registration & Guidelines | KNGINE 2026",
     description:
-      "Discover KNGINE – the flagship ICT Day of Richmond College, organized by RITS. Experience innovation, competition, and digital creativity.",
-    url: "https://kngine.richmondcollege.lk",
+      "Register now for KNGINE 2026 – Richmond College’s flagship Inter-School ICT Day organized by RITS.",
+    url: "https://kngine.richmondcollege.lk/register",
     siteName: "KNGINE",
     images: [
       {
-        url: "/images/og/register.jpeg",
+        url: "https://kngine.richmondcollege.lk/og/register.jpeg",
         width: 1200,
         height: 630,
-        alt: "KNGINE - Richmond College ICT Day",
+        alt: "KNGINE 2026 Registration",
       },
     ],
     locale: "en_US",
@@ -68,11 +65,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "KNGINE | Richmond College ICT Day",
+    title: "KNGINE 2026 Registration",
     description:
-      "The official website of KNGINE, the annual ICT Day organized by Richmond College ICT Society (RITS).",
-    images: ["/og/main.png"],
-    creator: "@RichmondCollege", // optional if available
+      "Official registration page for KNGINE 2026, the Inter-School ICT Day by Richmond College ICT Society.",
+    images: ["https://kngine.richmondcollege.lk/og/register.jpeg"],
   },
 
   icons: {
