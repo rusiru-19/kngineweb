@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
           <div className="p-10 md:p-16 lg:p-24">
             {/* Top Meta Bar */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16 gap-4">
-              <span className="text-white text-[10px] md:text-xs font-black uppercase tracking-[0.2em] opacity-60">FEBRUARY 12, 2025</span>
+              <span className="text-white text-[10px] md:text-xs font-black uppercase tracking-[0.2em] opacity-60">FEBRUARY 12, 2026</span>
             </div>
 
             <div className="grid lg:grid-cols-2 items-center gap-12 relative">
