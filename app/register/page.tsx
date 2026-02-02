@@ -1,5 +1,89 @@
 import React from 'react';
 import { Calendar, MapPin, Shield, AlertCircle, CheckCircle, Clock, Users, Award } from 'lucide-react';
+import { Metadata } from 'next';
+
+
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://kngine.richmondcollege.lk"),
+
+  title: {
+    default: "KNGINE | Richmond College ICT Day",
+    template: "%s | KNGINE",
+  },
+
+  description:
+    "KNGINE is the annual ICT Day organized by the Richmond College ICT Society (RITS), featuring innovative technology events, competitions, and digital excellence.",
+
+  keywords: [
+    "KNGINE",
+    "Richmond College",
+    "Richmond College ICT Society",
+    "RITS",
+    "ICT Day Sri Lanka",
+    "School ICT Competition",
+    "Richmond ICT",
+    "KNGINE Legion",
+    "Technology Events Sri Lanka",
+    "Student ICT Competitions",
+  ],
+
+  authors: [{ name: "Rusiru Thamara" }],
+  creator: "Richmond College ICT Society",
+  publisher: "Richmond College",
+
+  alternates: {
+    canonical: "https://kngine.richmondcollege.lk",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  openGraph: {
+    title: "KNGINE | Richmond College ICT Day",
+    description:
+      "Discover KNGINE – the flagship ICT Day of Richmond College, organized by RITS. Experience innovation, competition, and digital creativity.",
+    url: "https://kngine.richmondcollege.lk",
+    siteName: "KNGINE",
+    images: [
+      {
+        url: "/images/og/register.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "KNGINE - Richmond College ICT Day",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "KNGINE | Richmond College ICT Day",
+    description:
+      "The official website of KNGINE, the annual ICT Day organized by Richmond College ICT Society (RITS).",
+    images: ["/og/main.png"],
+    creator: "@RichmondCollege", // optional if available
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
+};
+
 export const Register: React.FC = () => {
   const competitions = [
     {
@@ -192,7 +276,7 @@ export const Register: React.FC = () => {
                 Register for all online competitions using the official KNGINE'26 registration form
               </p>
               <a 
-                href="/"
+                href="https://forms.gle/4fLkkPFw4UGKcYx29"
                 className="inline-block bg-white text-[#2563EB] px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-gray-100 transition-all active:scale-95 text-sm md:text-base"
               >
                 Register Now
