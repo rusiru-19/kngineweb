@@ -269,7 +269,7 @@ export const Register: React.FC = () => {
                 Ready to Join?
               </h3>
               <p className="text-white/90 text-base md:text-lg mb-8 max-w-2xl mx-auto">
-                Register for all online competitions using the official KNGINE'26 registration form
+                Register for all online competitions using the official KNGINE'26 registration form.Please feel free to let us know if you want any clarification about the event.
               </p>
               <a 
                 href="https://forms.gle/4fLkkPFw4UGKcYx29"

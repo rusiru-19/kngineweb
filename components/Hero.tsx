@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                 </h1>
                 
                 <p className="text-[#9CA3AF] text-base md:text-lg leading-relaxed max-w-md mb-12 font-medium">
-            KNGINE: LEGION embodies the principles of collective strength and unity, reflecting how generation of richmond dites have come together to build the proud legacy of the college
+            KNGINE: LEGION embodies the principles of collective strength and unity, reflecting how generation of richmond dites have come together to build the proud legacy of the college. 
                 </p>
                 
                 <Button 
