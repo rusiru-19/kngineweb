@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { StarburstGraphic, ArrowRightIcon } from '@/constants';
 
@@ -16,7 +16,7 @@ const Registration: React.FC = () => {
     minutes: 0,
     seconds: 0,
   });
-  const [prevTime, setPrevTime] = useState({
+  const prevTimeRef = useRef({
     days: 0,
     hours: 0,
     minutes: 0,
@@ -60,11 +60,12 @@ const Registration: React.FC = () => {
     // initial set
     const initial = calculateTimeLeft();
     setTimeLeft(initial);
-    setPrevTime(initial);
+    prevTimeRef.current = initial;
 
     const interval = setInterval(() => {
       const newTime = calculateTimeLeft();
-      
+      const prevTime = prevTimeRef.current;
+
       // Check which units changed
       const changes = {
         days: newTime.days !== prevTime.days,
@@ -75,9 +76,9 @@ const Registration: React.FC = () => {
 
       if (Object.values(changes).some(changed => changed)) {
         setAnimatingUnits(changes);
-        setPrevTime(newTime);
+        prevTimeRef.current = newTime;
         setTimeLeft(newTime);
-        
+
         // Reset animation after it completes
         setTimeout(() => {
           setAnimatingUnits({ days: false, hours: false, minutes: false, seconds: false });
@@ -86,7 +87,7 @@ const Registration: React.FC = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [prevTime]);
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex(Math.max(0, currentIndex - 1));
@@ -108,7 +109,7 @@ const Registration: React.FC = () => {
   );
 
   return (
-    <section  className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-[1200px]  mx-auto">
         {/* Register Section */}
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start mb-12 sm:mb-16">
@@ -137,7 +138,7 @@ const Registration: React.FC = () => {
               <CountdownUnit value={timeLeft.hours} label="HOURS" isAnimating={animatingUnits.hours} />
               <div className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white/20">:</div>
               <CountdownUnit value={timeLeft.minutes} label="MINUTES" isAnimating={animatingUnits.minutes} />
-              
+
             </div>
           </div>
 
@@ -151,14 +152,14 @@ const Registration: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tighter">
             What Past Look Like
           </h3>
-           <div className="flex gap-2">
-            <button 
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-            className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white transition-colors">
+          <div className="flex gap-2">
+            <button
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white transition-colors">
               <ArrowRightIcon className="w-5 h-5 rotate-180" />
             </button>
-            <button 
+            <button
               onClick={handleNext}
               disabled={currentIndex === maxIndex}
               className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors
@@ -175,12 +176,12 @@ const Registration: React.FC = () => {
         </div>
 
         {/* Testimonials with Navigation */}
-        <div  className="relative mb-1 sm:mb-2 md:mb-4 lg:mb-2">
+        <div className="relative mb-1 sm:mb-2 md:mb-4 lg:mb-2">
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex gap-4 sm:gap-6 transition-transform duration-500 ease-out"
-              style={{ 
-                transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)` 
+              style={{
+                transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)`
               }}
             >
               {testimonials.map((t, i) => (
@@ -212,9 +213,8 @@ const Registration: React.FC = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`h-2 rounded-full transition-all ${
-                    i === currentIndex ? 'w-8 bg-white' : 'w-2 bg-white/30'
-                  }`}
+                  className={`h-2 rounded-full transition-all ${i === currentIndex ? 'w-8 bg-white' : 'w-2 bg-white/30'
+                    }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
               ))}
@@ -222,7 +222,7 @@ const Registration: React.FC = () => {
           )}
         </div>
 
-        
+
       </div>
 
       <style>{`
